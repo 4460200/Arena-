@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena 2D Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="menu">
+    <h1>⚔️ ARENA 2D</h1>
+
+    <p>Digite seu nome:</p>
+
+    <input
+      id="nome"
+      type="text"
+      maxlength="16"
+      placeholder="Seu nome"
+      value="Jogador"
+    >
+
+    <button id="entrar">ENTRAR NA ARENA</button>
+
+    <p id="status">Conectando...</p>
+  </div>
+
+  <div id="jogo" style="display: none;">
+
+    <div id="topo">
+      <div>
+        ❤️ Vida:
+        <span id="vida">100</span>
+      </div>
+
+      <div>
+        💀 Kills:
+        <span id="kills">0</span>
+      </div>
+
+      <div>
+        ☠️ Mortes:
+        <span id="mortes">0</span>
+      </div>
+
+      <div id="jogadores">
+        👥 Jogadores: 0
+      </div>
+    </div>
+
+    <canvas id="arena" width="1200" height="700"></canvas>
+
+    <div id="controles">
+      <span>W A S D = mover</span>
+      <span>Mouse = mirar</span>
+      <span>Botão esquerdo = atirar</span>
+    </div>
+
+    <div id="mensagens"></div>
+
+  </div>
+
+  <script src="jogo.js"></script>
+
+</body>
+</html>
