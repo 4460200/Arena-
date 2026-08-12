@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #10131a;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  width: 420px;
+  padding: 40px;
+  background: #1b2030;
+  border: 2px solid #39445c;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+#menu h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+#menu p {
+  margin: 12px 0;
+  color: #b9c1d4;
+}
+
+#nome {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #4d5a75;
+  border-radius: 10px;
+  background: #10131a;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+}
+
+#nome:focus {
+  border-color: #8b5cf6;
+}
+
+#entrar {
+  width: 100%;
+  margin-top: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#entrar:hover {
+  background: #8b5cf6;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#jogo {
+  width: 1200px;
+  max-width: 100%;
+  position: relative;
+}
+
+#topo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  background: #1b2030;
+  border: 1px solid #39445c;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#arena {
+  display: block;
+  width: 1200px;
+  height: 700px;
+  max-width: 100%;
+  border: 3px solid #39445c;
+  border-radius: 12px;
+  background: #171b25;
+  cursor: crosshair;
+}
+
+#controles {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px;
+  color: #9ca7bd;
+  font-size: 14px;
+}
+
+#mensagens {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  pointer-events: none;
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  #jogo {
+    padding: 10px;
+  }
+
+  #topo {
+    font-size: 13px;
+  }
+
+  #controles {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
