@@ -1,68 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arena 2D Multiplayer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2D Multiplayer Arena</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div id="menu">
-    <h1>⚔️ ARENA 2D</h1>
+    <div id="menu">
+        <h1>⚔️ ARENA 2D</h1>
 
-    <p>Digite seu nome:</p>
+        <p>Enter your name:</p>
 
-    <input
-      id="nome"
-      type="text"
-      maxlength="16"
-      placeholder="Seu nome"
-      value="Jogador"
-    >
+        <input
+            id="nome"
+            type="text"
+            maxlength="16"
+            placeholder="Your name"
+            value="Player"
+        >
 
-    <button id="entrar">ENTRAR NA ARENA</button>
+        <button id="entrar">ENTER ARENA</button>
 
-    <p id="status">Conectando...</p>
-  </div>
-
-  <div id="jogo" style="display: none;">
-
-    <div id="topo">
-      <div>
-        ❤️ Vida:
-        <span id="vida">100</span>
-      </div>
-
-      <div>
-        💀 Kills:
-        <span id="kills">0</span>
-      </div>
-
-      <div>
-        ☠️ Mortes:
-        <span id="mortes">0</span>
-      </div>
-
-      <div id="jogadores">
-        👥 Jogadores: 0
-      </div>
+        <p id="status">Connecting...</p>
     </div>
 
-    <canvas id="arena" width="1200" height="700"></canvas>
 
-    <div id="controles">
-      <span>W A S D = mover</span>
-      <span>Mouse = mirar</span>
-      <span>Botão esquerdo = atirar</span>
+    <div id="jogo" style="display: none;">
+
+        <div id="topo">
+
+            <div>
+                ❤️ Health:
+                <span id="vida">100</span>
+            </div>
+
+            <div>
+                ☠️ Kills:
+                <span id="mata">0</span>
+            </div>
+
+            <div>
+                💀 Deaths:
+                <span id="mortes">0</span>
+            </div>
+
+            <div id="cara">
+                👥 Players:
+                <span id="jogadores">0</span>
+            </div>
+
+        </div>
+
+
+        <canvas
+            id="arena"
+            width="1200"
+            height="700">
+        </canvas>
+
+
+        <div id="controles">
+            <span>WASD = Move</span>
+            <span>Mouse = Aim</span>
+            <span>Left Click = Shoot</span>
+        </div>
+
+
+        <div id="mensagens"></div>
+
     </div>
 
-    <div id="mensagens"></div>
 
-  </div>
-
-  <script src="jogo.js"></script>
+    <script src="jogo.js"></script>
 
 </body>
 </html>
